@@ -29,7 +29,7 @@ script:
   - echo $PATH; echo $LD_LIBRARY_PATH
   - which $CXX
   - which tclsh
-  - tclsh --version
+  - echo "puts [info patchlevel]" | tclsh
   - cmake ../wdt -DBUILD_TESTING=1 
   #- make -j 4 VERBOSE=1
   - make -j 4
