@@ -33,7 +33,7 @@ script:
   - cmake ../wdt -DBUILD_TESTING=1 
   #- make -j 4 VERBOSE=1
   - make -j 4
-  - WDT_TEST_SYMLINKS=0 CTEST_OUTPUT_ON_FAILURE=1 make test
+  - CTEST_OUTPUT_ON_FAILURE=1 make test
   # to see the full output/debug:
   #- ../wdt_e2e_simple_test.sh
 
