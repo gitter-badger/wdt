@@ -28,8 +28,8 @@ script:
   - mkdir ../build && cd ../build 
   - echo $PATH; echo $LD_LIBRARY_PATH
   - which $CXX
-  - which tclsh
-  - echo "puts [info patchlevel]" | tclsh
+#  - which tclsh
+#  - echo "puts [info patchlevel]" | tclsh
   - cmake ../wdt -DBUILD_TESTING=1 
   #- make -j 4 VERBOSE=1
   - make -j 4
